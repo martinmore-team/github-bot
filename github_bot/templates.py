@@ -1,0 +1,50 @@
+OK_TO_PREVIEW = """\
+Hi 👋 You can find a preview of the docs here:
+
+{links}
+"""
+
+MISSING_RELEASE_FILE = """\
+Hi, thanks for contributing to {repo_name} ☀️!
+
+We noticed that this PR is missing a `RELEASE.md` file. \
+We use that to automatically do releases here on GitHub and, \
+most importantly, to PyPI!
+
+So as soon as this PR is merged, a release will be made 🚀.
+
+Here's an example of `RELEASE.md`:
+
+```markdown
+Release type: patch
+
+Description of the changes, ideally with some examples, if adding a new feature.
+```
+
+Release type can be one of patch, minor or major. We use [semver](https://semver.org/), \
+so make sure to pick the appropriate type
+"""
+
+RELEASE_FILE_ADDED = """
+Thanks for adding the `RELEASE.md` file!
+
+![](https://media1.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif)
+
+Here's a preview of the changelog:
+
+---
+
+{changelog_preview}
+
+"""
+
+INVALID_RELEASE_FILE = """\
+Thanks for adding the release file! Unfortunately it does seem to be \
+invalid. Make sure it looks like the following example:
+
+```markdown
+Release type: patch
+
+Description of the changes, ideally with some examples, if adding a new feature.
+```
+"""
